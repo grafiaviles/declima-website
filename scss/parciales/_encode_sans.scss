@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "encodesans";
+    src: local(encodesans Thin),
+    url("#{$encodesans-font-path}encodesans-Thin.ttf") format("ttf"),
+    url("#{$encodesans-font-path}encodesans-Thin.ttf") format("ttf");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "encodesans";
+    src: local(encodesans Light),
+    url("#{$encodesans-font-path}encodesans-Light.ttf") format("ttf"),
+    url("#{$encodesans-font-path}encodesans-Light.ttf") format("ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "encodesans";
+    src: local(encodesans Regular),
+    url("#{$encodesans-font-path}encodesans-Regular.ttf") format("ttf"),
+    url("#{$encodesans-font-path}encodesans-Regular.ttf") format("ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "encodesans";
+    src: local(encodesans Medium),
+    url("#{$encodesans-font-path}encodesans-Medium.ttf") format("ttf"),
+    url("#{$encodesans-font-path}encodesans-Medium.ttf") format("ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "encodesans";
+    src: local(encodesans Bold),
+    url("#{$encodesans-font-path}encodesans-Bold.ttf") format("ttf"),
+    url("#{$encodesans-font-path}encodesans-Bold.ttf") format("ttf");
+    font-weight: 700;
+}

@@ -1,0 +1,1 @@
+var vocales=["a","e","i","o","u"],numeros_vocales=vocales.length;

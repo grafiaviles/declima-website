@@ -1,0 +1,38 @@
+{
+  "name": "declima-website",
+  "version": "1.0.0",
+  "description": "Proyecto Declima",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grafiaviles/declima-website.git"
+  },
+  "keywords": [
+    "Declimapplication"
+  ],
+  "author": "Cesar Aviles",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/grafiaviles/declima-website/issues"
+  },
+  "homepage": "https://github.com/grafiaviles/declima-website#readme",
+  "devDependencies": {
+    "@aquafadas/gulp-php-minify": "^0.3.1",
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect-php": "^1.0.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-phpcs": "^2.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
+    "jshint": "^2.9.5",
+    "materialize-css": "^0.100.2",
+    "pump": "^1.0.2"
+  }
+}

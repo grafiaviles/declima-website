@@ -1,0 +1,4 @@
+@mixin background-image($gradient) {
+    background-image: -webkit-$gradient;
+    background-image: -moz-$gradient;
+}

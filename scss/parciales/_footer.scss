@@ -1,6 +1,205 @@
 footer {
-    width: 100%;
     background: $primaryColor;
-    color: white;
     align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    & .ayuda_user {
+        background: $secondColor;
+        width: 100%;
+        & .content_ayuda {
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+            @media screen and (max-width: 993px) {
+                padding: 2rem 0 0 0;
+                text-align: center;
+            }
+            & div {
+                margin: 0;
+                padding: 0;
+                & span {
+                    font-size: 1.6rem;
+                    display: block;
+                    text-align: center;
+                    padding: 0 1rem;
+                    @media screen and (max-width: 993px) {
+                        margin: 0 1rem 2rem 1rem;
+                        width: 90%;
+                    }
+                }
+            }
+            & .cont_btn_ayuda {
+                margin: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                & .btn {
+                    box-shadow: none;
+                    display: flex;
+                    line-height: 100px;
+                    height: 100px;
+                    justify-content: center;
+                    align-items: center;
+                    background: rgba(255, 255, 255, 0.1);
+                    border-radius: 0;
+                    & i {
+                        font-size: 2rem;
+                    }
+                }
+                & .btn:nth-child(1) {
+                    background: rgba(1, 82, 104, 0.1);
+                }
+                & .btn:nth-child(2) {
+                    background: rgba(1, 82, 104, 0.2);
+                }
+                & .btn:nth-child(3) {
+                    background: rgba(1, 82, 104, 0.3);
+                }
+                & .btn:nth-child(4) {
+                    background: rgba(1, 82, 104, 0.4);
+                }
+                & .btn:hover {
+                    background: rgba(255, 255, 255, 0.05);
+                }
+            }
+        }
+    }
+    //Informacion Desktop
+    & .cont_box_foot {
+        padding: 3rem 0 2rem 0;
+        margin-bottom: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        & .section_maps {
+            border-radius: 3px;
+            overflow: hidden;
+            box-shadow: 0 25px 20px -10px rgba(0, 0, 0, .1);
+        }
+        & .section {
+            padding-right: 2rem;
+            color: white;
+            & i {
+                color: $secondColor;
+                font-size: 1.5rem;
+            }
+            & h5 {
+                font-size: 16px;
+                font-weight: 500;
+            }
+            & p,
+            & a {
+                color: rgba(255, 255, 255, .6);
+                font-size: 13px;
+                font-weight: 500;
+            }
+            & a.mail-executive {
+                color: $secondColor;
+            }
+            & a:hover {
+                color: white;
+            }
+            & .name_executive {
+                font-weight: 500;
+            }
+            & .section-form {
+                padding-bottom: 14px;
+            }
+            & .form-news {
+                width: 100%;
+                & .input-field {
+                    width: 110%;
+                    margin-left: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    & .input-email-news {
+                        box-shadow: 0 0 0 1px $secondColor;
+                        padding-left: 1rem;
+                        font-weight: 500;
+                        width: 70%;
+                        border-bottom: none;
+                        font-size: .9rem;
+                        border-radius: 3px 0 0 3px;
+                        margin-bottom: 0;
+                    }
+                    & .label-email-news {
+                        color: rgba(255, 255, 255, 0.6);
+                        font-size: .9rem;
+                        padding-left: 1rem;
+                        font-weight: 500;
+                    }
+                    & .label-email-news:after {
+                        margin-top: 20px;
+                        padding-left: 1rem;
+                        font-weight: 600;
+                    }
+                    & .submit-email-news {
+                        width: 30%;
+                        height: 3rem;
+                        background: $secondColor;
+                        outline: none;
+                        border: none;
+                        padding: 0 .5rem;
+                        display: flex;
+                        justify-content: center;
+                        text-align: center;
+                        box-shadow: 0 0 0 1px $secondColor;
+                        font-size: .9rem;
+                        font-weight: 500;
+                        border-radius: 0 3px 3px 0;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        & .section::nth-of-type(4) {
+            padding-right: 0;
+        }
+        & .section_redes_footer {
+            & .icon-redes {
+                box-shadow: 0 0 0 1px $secondColor;
+                display: inline-block;
+                text-align: center;
+                width: 45px;
+                line-height: 45px;
+                margin-right: 10px;
+                border-radius: 22.5px;
+                margin-top: 10px;
+                color: $secondColor;
+                & .icon-footer {
+                    display: block;
+                    line-height: 45px;
+                    font-size: 1.3rem;
+                    transition: $transition1;
+                }
+                & .icon-brand10 {
+                    font-size: 1.5rem;
+                }
+            }
+            & .icon-redes:hover,
+            & .icon-redes:focus {
+                background: $secondColor;
+                box-shadow: none;
+            }
+            & .icon-redes:hover .icon-footer,
+            & .icon-redes:focus .icon-footer {
+                color: white;
+            }
+        }
+    }
+    //Informacion Mobile
+    & .cont_box_foot_mobile {
+        & ul.collapsible {
+            margin: 0;
+            font-size: 1.1rem;
+            & .collapsible-header {
+                color: $secondColor;
+                padding: 1.5rem;
+            }
+            & .collapsible-body {
+                color: $greyColor;
+                background: #F5F5F5;
+            }
+        }
+    }
 }

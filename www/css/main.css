@@ -3295,7 +3295,7 @@ footer .cont_box_foot .section .section-form { padding-bottom: 14px; }
 
 footer .cont_box_foot .section .form-news { width: 100%; }
 
-footer .cont_box_foot .section .form-news .input-field { width: 110%; margin-left: 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+footer .cont_box_foot .section .form-news .input-field { width: 120%; margin-left: 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 footer .cont_box_foot .section .form-news .input-field .input-email-news { -webkit-box-shadow: 0 0 0 1px #3fa7f3; box-shadow: 0 0 0 1px #3fa7f3; padding-left: 1rem; font-weight: 500; width: 70%; border-bottom: none; font-size: .9rem; border-radius: 3px 0 0 3px; margin-bottom: 0; }
 
@@ -3316,6 +3316,32 @@ footer .cont_box_foot .section_redes_footer .icon-redes .icon-brand10 { font-siz
 footer .cont_box_foot .section_redes_footer .icon-redes:hover, footer .cont_box_foot .section_redes_footer .icon-redes:focus { background: #3fa7f3; -webkit-box-shadow: none; box-shadow: none; }
 
 footer .cont_box_foot .section_redes_footer .icon-redes:hover .icon-footer, footer .cont_box_foot .section_redes_footer .icon-redes:focus .icon-footer { color: white; }
+
+footer .cont_legal_foot { margin-bottom: 0; }
+
+footer .cont_legal_foot .box_legal, footer .cont_legal_foot .box_logos { padding: 2rem 0 1.5rem 0; margin-bottom: 0; border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+
+footer .cont_legal_foot .box_legal .logo-declima-foot, footer .cont_legal_foot .box_logos .logo-declima-foot { width: 170px; }
+
+footer .cont_legal_foot .box_legal .legal-foot, footer .cont_legal_foot .box_logos .legal-foot { color: rgba(255, 255, 255, 0.4); font-weight: 500; font-size: 11px; line-height: 20px; margin-top: 0; }
+
+footer .cont_legal_foot .box_logos { border-bottom: 0; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+footer .cont_legal_foot .box_logos .info-logos { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+footer .cont_legal_foot .box_logos .info-logos h6 { color: rgba(255, 255, 255, 0.4); font-size: 11px; font-weight: 500; }
+
+footer .cont_legal_foot .box_logos .info-logos img { margin-left: 1rem; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; }
+
+footer .cont_legal_foot .box_logos .info-logos img:hover { opacity: 1; }
+
+footer .cont_legal_foot .box_logos .info-logos .logo-proveedores { width: 90px; opacity: .4; }
+
+footer .cont_legal_foot .box_logos .info-logos .sello-midea { width: 80px; }
+
+footer .cont_legal_foot .box_logos .info-logos .logo-cesar { width: 50px; opacity: .4; }
+
+footer .cont_legal_foot .box_logos .info-logos .logo-webpay { width: 250px; }
 
 footer .cont_box_foot_mobile ul.collapsible { margin: 0; font-size: 1.1rem; }
 

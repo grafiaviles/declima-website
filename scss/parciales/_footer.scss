@@ -107,7 +107,7 @@ footer {
             & .form-news {
                 width: 100%;
                 & .input-field {
-                    width: 110%;
+                    width: 120%;
                     margin-left: 0;
                     display: flex;
                     justify-content: space-between;
@@ -187,7 +187,64 @@ footer {
             }
         }
     }
-    //Informacion Mobile
+    //Informacion Legal
+    & .cont_legal_foot {
+        margin-bottom: 0;
+        //Legal Ofertas
+        & .box_legal {
+            padding: 2rem 0 1.5rem 0;
+            margin-bottom: 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            & .logo-declima-foot {
+                width: 170px;
+            }
+            & .legal-foot {
+                color: rgba(255, 255, 255, 0.4);
+                font-weight: 500;
+                font-size: 11px;
+                line-height: 20px;
+                margin-top: 0;
+            }
+        }
+        //Logotipos Sponsor
+        & .box_logos {
+            @extend .box_legal;
+            border-bottom: 0;
+            justify-content: center;
+            align-items: center;
+            & .info-logos {
+                justify-content: center;
+                align-items: center;
+                & h6 {
+                    color: rgba(255, 255, 255, 0.4);
+                    font-size: 11px;
+                    font-weight: 500;
+                }
+                & img {
+                    margin-left: 1rem;
+                    transition: $transition1;
+                }
+                & img:hover {
+                    opacity: 1;
+                }
+                & .logo-proveedores {
+                    width: 90px;
+                    opacity: .4;
+                }
+                & .sello-midea {
+                    width: 80px;
+                }
+                & .logo-cesar {
+                    width: 50px;
+                    opacity: .4;
+                }
+                & .logo-webpay {
+                    width: 250px;
+                }
+            }
+        }
+    }
+    //Informacion Version Mobile
     & .cont_box_foot_mobile {
         & ul.collapsible {
             margin: 0;

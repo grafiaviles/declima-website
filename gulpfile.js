@@ -12,15 +12,15 @@ phpMinify = require('@aquafadas/gulp-php-minify'); //Out;
 phpcs = require('gulp-phpcs'); //Out
 
 // Static Server + watching scss/html files
-gulp.task('default', function() {
+gulp.task('default', ['sass'], function() {
     connect.server({}, function() {
         browserSync({
             proxy: 'localhost/declima-website/www/'
         });
     });
-    gulp.watch('./www/*.php').on('change', browserSync.reload); //OBS PHP FILES
-    gulp.watch('./www/js/*.js', ['javascript']).on('change', browserSync.reload); //OBS JAVASCRIPT FILES
     gulp.watch('./scss/**/*.scss', ['sass']); //OBS SASS FILES
+    gulp.watch('./www/js/*.js', ['javascript']).on('change', browserSync.reload); //OBS JAVASCRIPT FILES
+    gulp.watch('./www/*.php').on('change', browserSync.reload); //OBS PHP FILES
 });
 
 

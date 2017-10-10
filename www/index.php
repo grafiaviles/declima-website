@@ -57,7 +57,8 @@
 </head>
 
 <body>
-    <main>
+    <main style="min-height:200px;">
+        hola
     </main>
     <!-- FOOTER -->
     <footer>
@@ -154,7 +155,7 @@
                     </div>
                     <div class="section section_redes_footer">
                         <i class="icon-share"></i>
-                        <h5>Síguenos tu también</h5>
+                        <h5>Redes Sociales</h5>
                         <a class="icon-redes" href="https://www.facebook.com/declimachile" target="_blank"><i class="icon-footer icon-facebook"></i></a>
                         <a class="icon-redes" href="https://www.instagram.com/declima/" target="_blank"><i class="icon-footer icon-instagram"></i></a>
                         <a class="icon-redes" href="https://plus.google.com/u/0/112998915048326285751" target="_blank"><i class="icon-footer icon-brand10"></i></a>
@@ -163,14 +164,38 @@
             </div>
         </div>
     </div>
+    <!-- Informacion Version Mobile -->
+    <div class="container-full hide-on-large-only">
+        <div class="row cont_box_foot_mobile">
+            <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header"><i class="icon-map-pin"></i>Sala de Ventas</div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li>
+                    <li>
+                    <div class="collapsible-header"><i class="icon-headphones"></i>Ejecutivos comerciales</div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li>
+                    <li>
+                    <div class="collapsible-header"><i class="icon-user-plus"></i>Información para Usuarios</div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    </li>
+                    <li>
+                    <div class="collapsible-header"><i class="icon-at-sign"></i>Declima News</div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+            </ul>
+        </div>
+    </div>
     <!-- Logotipos Footer -->
     <div class="container cont_legal_foot">
         <div class="row box_legal">
-            <div class="col s12 l3">
+            <div class="col s12 l3 cont_logo_sello">
                <a href="https://www.declima.cl"><img src="img/logo-declima.svg" class="responsive-img logo-declima-foot" alt="Logotipo Declima"></a>
+               <img src="img/footer/sello-midea.png" class="responsive-img sello-midea" alt="Sello Oficial Midea">
             </div>
             <div class="col s12 l9">
-                <h6 class="legal-foot">Declima – Servicios y Productos para Sistemas de Climatización. Las ofertas publicadas en nuestro sitio web son válidas hasta agotar stock, las unidades corresponde al total disponible en www.declima.cl Ofertas aplican sobre precio normal, descuentos ya aplicados a precio Internet. Válido pagando con todo medio. Las ofertas no son canjeables ni reembolsables por dinero en efectivo. Valor del despacho no está incluido en el precio del producto. Las imágenes son referenciales. Los valores no incluyen IVA. </h6>
+                <h6 class="legal-foot">Declima Spa – Servicios y Productos para Sistemas de Climatización. Las ofertas publicadas en nuestro sitio web son válidas hasta agotar stock, las unidades corresponde al total disponible en www.declima.cl Ofertas aplican sobre precio normal, descuentos ya aplicados a precio Internet. Válido pagando con todo medio. Las ofertas no son canjeables ni reembolsables por dinero en efectivo. Valor del despacho no está incluido en el precio del producto. Las imágenes son referenciales. Los valores no incluyen IVA. </h6>
             </div>
         </div>
     </div>
@@ -178,52 +203,44 @@
         <div class="container cont_legal_foot">
             <div class="row box_logos valign-wrapper">
                 <!-- Proveedores -->
-                <div class="col s4 l4 info-logos valign-wrapper">
-                    <h6>Proveedores:</h6>
-                    <img src="img/footer/sello-midea.png" class="responsive-img sello-midea" alt="Sello Oficial Midea">
-                    <img src="img/footer/midea.svg" class="responsive-img logo-proveedores" alt="Logotipo Midea">
-                    <img src="img/footer/carrier.svg" class="responsive-img logo-proveedores" alt="Logotipo Carrier">
+                <div class="col s4 l4 info-logos info-proveedores valign-wrapper">
+                    <h6>Proveedores Oficiales:</h6>
+                    <div>
+                        <img src="img/footer/midea.svg" class="responsive-img logo-proveedores" alt="Logotipo Midea">
+                        <img src="img/footer/carrier.svg" class="responsive-img logo-proveedores" alt="Logotipo Carrier">
+                    </div>
                 </div>
                 <!-- Genio del Diseño y Desarrollo César Avilés -->
-                <div class="col s4 l4 info-logos valign-wrapper">
-                    <h6>Diseño y Desarrollo:</h6>
+                <div class="col s4 l4 info-logos info-cesar valign-wrapper">
+                    <h6>Design & Development:</h6>
                     <a href="https://www.linkedin.com/in/grafiaviles/" target="_blank"><img src="img/footer/cesar-icon.svg" class="responsive-img logo-cesar" alt="Logotipo César Avilés"></a>
                 </div>
                 <!-- Webpay -->
-                <div class="col s4 l4 info-logos valign-wrapper">
+                <div class="col s4 l4 info-logos info-webpay valign-wrapper">
                     <h6>Métodos de pagos:</h6>
                     <a href="https://www.webpay.cl/portalpagodirecto/pages/institucion.jsf?idEstablecimiento=32287091" target="_blank"><img src="img/footer/webpay.svg" class="responsive-img logo-webpay" alt="Logotipo César Avilés"></a>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Informacion Version Mobile -->
-    <div class="container-full hide-on-large-only">
-    <div class="row cont_box_foot_mobile">
-    <ul class="collapsible" data-collapsible="accordion">
-        <li>
-            <div class="collapsible-header"><i class="icon-map-pin"></i>Sala de Ventas</div>
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-            <li>
-            <div class="collapsible-header"><i class="icon-headphones"></i>Ejecutivos comerciales</div>
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-            <li>
-            <div class="collapsible-header"><i class="icon-user-plus"></i>Información para Usuarios</div>
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-            <li>
-            <div class="collapsible-header"><i class="icon-at-sign"></i>Declima News</div>
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-        </li>
-    </ul>
-    </div>
+        <!-- Pie Footer -->
+        <div class="container cont_pie">
+            <div class="row box_pie_foot">
+                <!-- Proveedores -->
+                <div class="col s12">
+                    <h6>&copy; Declima Spa 2015 | Servicios y Productos para Sistemas de Climatización. Santiago de Chile. Todos los derechos reservados.</h6>
+                </div>
+                <!-- Genio del Diseño y Desarrollo César Avilés -->
+                <div class="scroll-to-top subir valign-wrapper">
+                    <a><i class="icon-chevron-up"></i></a>
+                    <h6>Subir</h6>
+                </div>
+            </div>
+        </div>
     </div>
 </footer>
 <script src="lib/jquery-3.2.1.min.js"></script>
 <script src="lib/materialize.min.js"></script>
-<script src="js/dist/effects.js"></script>
+<script src="js/effects.js"></script>
 <?php include("include/metricas.php"); ?>
 </body>
 

@@ -7,6 +7,9 @@ footer {
     & .ayuda_user {
         background: $secondColor;
         width: 100%;
+        @media screen and (max-width: 768px) {
+            background: $primaryColor;
+        }
         & .content_ayuda {
             margin: 0;
             padding: 0;
@@ -49,15 +52,27 @@ footer {
                 }
                 & .btn:nth-child(1) {
                     background: rgba(1, 82, 104, 0.1);
+                    @media screen and (max-width: 768px) {
+                        background: rgb(17, 100, 139);
+                    }
                 }
                 & .btn:nth-child(2) {
                     background: rgba(1, 82, 104, 0.2);
+                    @media screen and (max-width: 768px) {
+                        background: rgba(37, 169, 244, 0.35);
+                    }
                 }
                 & .btn:nth-child(3) {
                     background: rgba(1, 82, 104, 0.3);
+                    @media screen and (max-width: 768px) {
+                        background: rgb(17, 100, 139);
+                    }
                 }
                 & .btn:nth-child(4) {
                     background: rgba(1, 82, 104, 0.4);
+                    @media screen and (max-width: 768px) {
+                        background: rgba(37, 169, 244, 0.35);
+                    }
                 }
                 & .btn:hover {
                     background: rgba(255, 255, 255, 0.05);
@@ -134,12 +149,11 @@ footer {
                         font-weight: 600;
                     }
                     & .submit-email-news {
-                        width: 30%;
                         height: 3rem;
                         background: $secondColor;
                         outline: none;
                         border: none;
-                        padding: 0 .5rem;
+                        padding: 0 1rem;
                         display: flex;
                         justify-content: center;
                         text-align: center;
@@ -156,6 +170,7 @@ footer {
             padding-right: 0;
         }
         & .section_redes_footer {
+            padding-right: 0;
             & .icon-redes {
                 box-shadow: 0 0 0 1px $secondColor;
                 display: inline-block;
@@ -190,13 +205,32 @@ footer {
     //Informacion Legal
     & .cont_legal_foot {
         margin-bottom: 0;
+        @media screen and (max-width: 768px) {
+            width: 85%;
+        }
         //Legal Ofertas
         & .box_legal {
             padding: 2rem 0 1.5rem 0;
             margin-bottom: 0;
             border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-            & .logo-declima-foot {
-                width: 170px;
+            align-items: center;
+            justify-content: center;
+            & .cont_logo_sello {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                @media screen and (max-width: 993px) {
+                    margin-bottom: 2rem;
+                }
+                & .logo-declima-foot {
+                    width: 170px;
+                }
+                & .sello-midea {
+                    margin-left: 1rem;
+                    @media screen and (max-width: 768px) {
+                        width: 70px;
+                    }
+                }
             }
             & .legal-foot {
                 color: rgba(255, 255, 255, 0.4);
@@ -204,42 +238,124 @@ footer {
                 font-size: 11px;
                 line-height: 20px;
                 margin-top: 0;
+                text-align: justify;
             }
         }
         //Logotipos Sponsor
         & .box_logos {
             @extend .box_legal;
             border-bottom: 0;
+            margin: 0;
             justify-content: center;
             align-items: center;
+            @media screen and (max-width: 768px) {
+                align-items: flex-start;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+            }
             & .info-logos {
                 justify-content: center;
                 align-items: center;
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    margin-bottom: 1rem;
+                }
                 & h6 {
                     color: rgba(255, 255, 255, 0.4);
                     font-size: 11px;
                     font-weight: 500;
+                    @media screen and (max-width: 768px) {
+                        margin-bottom: 1rem;
+                    }
                 }
                 & img {
                     margin-left: 1rem;
                     transition: $transition1;
+                    @media screen and (max-width: 768px) {
+                        margin-left: 0;
+                    }
                 }
                 & img:hover {
                     opacity: 1;
                 }
                 & .logo-proveedores {
-                    width: 90px;
-                    opacity: .4;
-                }
-                & .sello-midea {
                     width: 80px;
+                    opacity: .4;
+                    @media screen and (max-width: 768px) {
+                        width: 90px;
+                    }
                 }
                 & .logo-cesar {
-                    width: 50px;
+                    width: 40px;
                     opacity: .4;
+                    @media screen and (max-width: 768px) {
+                        width: 50px;
+                    }
                 }
                 & .logo-webpay {
-                    width: 250px;
+                    width: 240px;
+                    @media screen and (max-width: 768px) {
+                        width: 300px;
+                    }
+                }
+            }
+            & .info-logos:nth-of-type(3) {
+                @media screen and (max-width: 768px) {
+                    order: -1;
+                }
+            }
+        }
+    }
+    // Pie Footer
+    & .cont_pie {
+        width: 100%;
+        & .box_pie_foot {
+            background: #0d4e6c;
+            position: relative;
+            color: white;
+            margin: 0;
+            align-items: center;
+            & h6 {
+                text-align: center;
+                color: rgba(255, 255, 255, 0.4);
+                font-size: 11px;
+                padding: 1rem;
+                margin: 0;
+                font-weight: 500;
+            }
+            & .subir {
+                position: absolute;
+                cursor: pointer;
+                @media screen and (max-width: 480px) {
+                    position: relative;
+                    width: 100%;
+                    //background-color: $secondColor;
+                    //border-top: solid 1px rgba(255, 255, 255, 0.15);
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                & h6 {
+                    padding: 1rem 1rem 1rem .5rem;
+                    color: white;
+                    @media screen and (max-width: 480px) {
+                        font-size: 1rem;
+                        opacity: .4;
+                    }
+                }
+                & i.icon-chevron-up {
+                    font-size: 1rem;
+                    padding-left: 1rem;
+                    color: white;
+                    display: block;
+                    @media screen and (max-width: 480px) {
+                        font-size: 1.3rem;
+                        opacity: .4;
+                    }
                 }
             }
         }
@@ -250,8 +366,11 @@ footer {
             margin: 0;
             font-size: 1.1rem;
             & .collapsible-header {
-                color: $secondColor;
+                color: $primaryColor;
                 padding: 1.5rem;
+                & i {
+                    color: $primaryColor;
+                }
             }
             & .collapsible-body {
                 color: $greyColor;
